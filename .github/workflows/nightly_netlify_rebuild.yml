@@ -1,0 +1,16 @@
+# DISABLE for now as we already have a job which refreshes the site
+# every night
+name: Trigger Netlify Build
+on:
+  schedule:
+    # Customize schedule expression at crontab.guru
+    # currently running at 10am UTC
+    - cron: "0 10 * * *"
+jobs:
+  build:
+    if: false
+    name: Trigger deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request
+        run: curl -X POST -d {} ${{ secrets.NETLIFY_BUILD_URL }}

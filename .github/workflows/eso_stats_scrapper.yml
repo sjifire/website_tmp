@@ -1,0 +1,50 @@
+---
+name: ESO_scrapper
+on:
+  schedule:
+    # Customize schedule expression at crontab.guru
+    # currently running at 9am UTC
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+    #  allow manual updating
+
+jobs:
+  scrapper:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "20.x"
+          check-latest: true
+          cache: "npm"
+      - run: npm ci
+      - run: npm run build --if-present
+      - run: npx playwright install --with-deps chromium
+      - name: primary run
+        run: |
+          # Retry 3 times before the steps actually fails
+          cmd="./bin/eso_stats_scrapper.js  -v --headless \
+               -o ./src/_data/stats.json -r website-DEV \
+               --csv_output report.csv";
+          (echo "===== Attempt: 1 ====" && eval "$cmd") || \
+          (echo "===== Attempt: 2 ====" && sleep 30 && eval "$cmd") || \
+          (echo "===== Attempt: 3 ====" && sleep 90 && eval "$cmd")
+        env:
+          ESO_REPORT_USERNAME: ${{ secrets.ESO_REPORT_USERNAME }}
+          ESO_REPORT_PASSWORD: ${{ secrets.ESO_REPORT_PASSWORD }}
+          ESO_REPORT_AGENCY: ${{ secrets.ESO_REPORT_AGENCY }}
+      - name: "Upload Artifact"
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: stat_artifacts
+          path: |
+            ./src/_data/stats.json
+            ./report.csv
+          retention-days: 7
+      - name: Add & Commit updated stats.json
+        uses: EndBug/add-and-commit@v9
+        with:
+          push: true
+          add: ./src/_data/stats.json
