@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://res.cloudinary.com/san-juan-fire-district-3/image/fetch/f_auto/https://sjifire.netlify.app/assets/sjifire-logo-clear.png"
+    />
+    <title>SJIFIRE Admin Panel</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script
+      src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"
+      integrity="sha384-jq9+Bunifqg6Me4p5pL6kRvWx08x/rwycWKJhtGUEPINnKdO0UeUmvdYWigUKEXf"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Include the JS file for remark plugin-->
+    <!-- Include Netlify Identity for authentication -->
+    <script
+      src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+      integrity="sha384-dy2tW8xkhLIj8lZR42MCwZhhDb2cCewZiw0uA65CMpdHiJzL+iubx7HzHcCXU2rW"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.0.12/purify.min.js"
+      integrity="sha512-Pkzp1f+T81Q7K8Dhj8Sc6SPhl+4D5JEe9TTjJLy7xbv+EdxStU9uRXEVzYOqjP+s6+lDAXo3nZ04szSG71ArhA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./editor-component-image.js"></script>
+    <!-- <script src="./editor-component-frame.js"></script> -->
+    <script src="./editor-component-file.js"></script>
+    <script src="./editor-component-video.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              window.location.reload(); //force refresh, which will show admin screen
+            });
+          }
+        });
+      }
+
+      CMS.registerEditorComponent(window.NetlifyCmsEditorComponentImage);
+      CMS.registerEditorComponent(window.NetlifyCmsEditorComponentFile);
+      // CMS.registerEditorComponent(window.NetlifyCmsEditorComponentFrame);
+      CMS.registerEditorComponent(window.NetlifyCmsEditorComponentYoutube);
+      CMS.registerEditorComponent(window.NetlifyCmsEditorComponentVimeo);
+    </script>
+  </body>
+</html>
