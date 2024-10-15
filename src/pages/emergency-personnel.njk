@@ -24,7 +24,7 @@ permalink: "/about/emergency-personnel/index.html"
       <div class="l-grid l-grid--personnel">
         {% for person in staffOnly %}
           <div class="person">
-            <div class="person__img{{ ' noimg' if not person.img_file }}">
+            <div class="person__img">
               <img src="{%- imgPath '/assets/personnel_imgs/' + (person.img_file or defaultImgName), cloudinaryDefaults -%}" alt="{{ person.first_name }} {{ person.last_name }}" width="157.5" height="164">
             </div>
             <h3>{{ person.first_name }} {{ person.last_name }}</h3>
