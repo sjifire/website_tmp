@@ -615,18 +615,6 @@ body {
   color: var(--bright-red);
 }
 
-.person__img.noimg {
-  background-color: var(--lt-blue-gray);
-}
-
-.person__img svg {
-  display: block;
-  margin-bottom: 0.5rem;
-  width: 157.5px;
-  height: 164px;
-  fill: var(--md-blue-gray);
-}
-
 .person__img img {
   width: 100%;
   height: auto;
