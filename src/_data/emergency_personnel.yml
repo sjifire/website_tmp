@@ -2,6 +2,40 @@ preamble: ""
 personnel:
   - roles:
       - Wildland Firefighter
+    first_name: Jacob
+    last_name: Wagner
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+    first_name: Rick
+    last_name: Venegas
+    staff_type: volunteer
+  - roles:
+      - Wildland Firefighter
+    first_name: Rob
+    last_name: Stewart
+    staff_type: volunteer
+  - roles:
+      - Wildland Firefighter
+    first_name: Emilio
+    last_name: Santiago
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+    first_name: Dylan
+    last_name: Roberson
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+      - EMT
+      - Apparatus Operator
+      - Marine Crew
+    first_name: Jordan
+    last_name: Pollack
+    staff_type: staff
+    rank: Division Chief
+  - roles:
+      - Wildland Firefighter
       - Apparatus Operator
     last_name: Newnham
     first_name: Billy
@@ -145,6 +179,7 @@ personnel:
     staff_type: volunteer
     roles:
       - FireFighter
+      - Apparatus Operator
     img_file: alexa_rust.jpg
   - first_name: Eric
     last_name: Eisenhardt
@@ -219,6 +254,7 @@ personnel:
     staff_type: volunteer
     roles:
       - FireFighter
+      - Apparatus Operator
     img_file: eric_rezabek.jpg
   - first_name: Leo
     last_name: De Bruyn
@@ -296,7 +332,6 @@ personnel:
     staff_type: volunteer
     roles:
       - FireFighter
-      - EMT
     img_file: trevor_bolton.jpg
   - first_name: David
     last_name: Howitt
@@ -317,7 +352,6 @@ personnel:
     staff_type: volunteer
     roles:
       - FireFighter
-      - Apparatus Operator
     img_file: images.jpg
   - first_name: Jenny
     last_name: Shrum
