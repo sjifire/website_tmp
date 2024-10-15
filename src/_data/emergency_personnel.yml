@@ -1,5 +1,10 @@
 preamble: ""
 personnel:
+  - roles:
+      - FireFighter
+    first_name: Max
+    last_name: Bush
+    staff_type: volunteer
   - first_name: Noel
     last_name: Monin
     title: ""
@@ -216,20 +221,6 @@ personnel:
     roles:
       - FireFighter
     img_file: chad_warmenhoven.jpg
-  - first_name: Cynthia
-    last_name: Parkin
-    title: NATIONAL Crisis Response Canine Team
-    staff_type: volunteer
-    roles:
-      - Support
-    img_file: cynthia_parkin.jpg
-  - first_name: Jet
-    last_name: Parkin
-    title: NATIONAL Crisis Response Canine Team
-    staff_type: volunteer
-    roles:
-      - Support
-    img_file: jet_parkin.jpg
   - first_name: Adam
     last_name: Greene
     staff_type: volunteer
