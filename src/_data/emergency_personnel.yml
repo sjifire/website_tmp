@@ -26,15 +26,6 @@ personnel:
     last_name: Roberson
     staff_type: volunteer
   - roles:
-      - FireFighter
-      - EMT
-      - Apparatus Operator
-      - Marine Crew
-    first_name: Jordan
-    last_name: Pollack
-    staff_type: staff
-    rank: Division Chief
-  - roles:
       - Wildland Firefighter
       - Apparatus Operator
     last_name: Newnham
@@ -103,17 +94,15 @@ personnel:
       - Marine Crew
     rank: Chief
     img_file: noel_monin.jpg
-  - first_name: Karl
-    last_name: Kuetzing
-    title: Training Officer
-    staff_type: staff
-    roles:
+  - roles:
       - FireFighter
       - EMT
       - Apparatus Operator
       - Marine Crew
-    img_file: karl_kuetzing.jpg
-    rank: Lieutenant
+    first_name: Jordan
+    last_name: Pollack
+    staff_type: staff
+    rank: Division Chief
   - first_name: Robin
     last_name: Garcia
     title: Front Office
@@ -141,6 +130,17 @@ personnel:
       - Marine Crew
     rank: Captain
     img_file: michael_hartzell.jpg
+  - first_name: Karl
+    last_name: Kuetzing
+    title: Training Officer
+    staff_type: staff
+    roles:
+      - FireFighter
+      - EMT
+      - Apparatus Operator
+      - Marine Crew
+    img_file: karl_kuetzing.jpg
+    rank: Lieutenant
   - first_name: Brad
     last_name: Smith
     staff_type: staff
