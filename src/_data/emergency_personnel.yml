@@ -2,6 +2,35 @@ preamble: ""
 personnel:
   - roles:
       - Wildland Firefighter
+      - Apparatus Operator
+    last_name: Newnham
+    first_name: Billy
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+      - Apparatus Operator
+    first_name: Izaac
+    last_name: Newell
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+      - EMT
+      - Apparatus Operator
+    first_name: Brian
+    last_name: Krembs
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+    first_name: Jaden
+    last_name: Jones
+    staff_type: volunteer
+  - roles:
+      - Wildland Firefighter
+    first_name: Katie
+    last_name: Hilding
+    staff_type: volunteer
+  - roles:
+      - Wildland Firefighter
     first_name: Albert
     last_name: Foster
     staff_type: volunteer
@@ -145,6 +174,7 @@ personnel:
     staff_type: volunteer
     roles:
       - Support
+      - Wildland Firefighter
     img_file: charles_genther.jpg
   - first_name: Harry
     last_name: See
