@@ -146,6 +146,7 @@ personnel:
     staff_type: staff
     roles:
       - FireFighter
+      - EMT
       - Apparatus Operator
     img_file: brad_smith.jpg
   - first_name: Craig
