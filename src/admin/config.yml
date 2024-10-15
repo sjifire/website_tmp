@@ -255,7 +255,7 @@ collections:
               - label: Rank
                 name: rank
                 widget: "select"
-                options: ["Lieutenant", "Captain", "Assist. Chief", "Chief"]
+                options: ["Lieutenant", "Captain", "Division Chief", "Assist. Chief", "Chief"]
                 required: false
                 multiple: false
               - label: Image File
