@@ -1,6 +1,32 @@
 preamble: ""
 personnel:
   - roles:
+      - Wildland Firefighter
+    first_name: Albert
+    last_name: Foster
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+    first_name: Robin
+    last_name: Dyer
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+      - Apparatus Operator
+    first_name: Ben
+    last_name: Duncan
+    staff_type: volunteer
+  - roles:
+      - FireFighter
+    first_name: Ben
+    last_name: Dillery
+    staff_type: volunteer
+  - roles:
+      - Wildland Firefighter
+    first_name: Claire
+    last_name: Crawbuck
+    staff_type: volunteer
+  - roles:
       - FireFighter
     first_name: Max
     last_name: Bush
@@ -82,6 +108,7 @@ personnel:
       - FireFighter
       - EMT
       - Apparatus Operator
+      - Marine Crew
     img_file: tom_eades.jpg
     rank: Lieutenant
   - first_name: Alexa
