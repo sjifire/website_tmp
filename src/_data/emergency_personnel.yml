@@ -333,6 +333,7 @@ personnel:
     staff_type: volunteer
     roles:
       - FireFighter
+      - EMT
     img_file: trevor_bolton.jpg
   - first_name: David
     last_name: Howitt
