@@ -165,6 +165,7 @@ module.exports = function (eleventyConfig) {
     // if(helpers.env !== 'production') return ''
     //HOWEVER, a double // seems to make it hard for Cloudinary to find the src img...
     // so stripping all leading /
+    logger.info(`imgPath-1: '${assetPath}' -- ${cloudinaryCmds}`);
     assetPath = assetPath.replace(/^\/+/, "");
     if (!cloudinaryCmds) cloudinaryCmds = "f_auto";
     if (isProduction && siteData.enable_cloudinary_rewrites) {
@@ -176,6 +177,7 @@ module.exports = function (eleventyConfig) {
       }
       return `/optim/${assetPath}?c_param=${cloudinaryCmds}`;
     }
+    logger.info(`imgPath-2: '${assetPath}'`);
     return `${siteData.cloudinaryRootUrl}/image/fetch/${cloudinaryCmds}/${siteData.rootUrl}/${assetPath}`;
   };
 
