@@ -1,4 +1,6 @@
 important_documents:
+  - title: Approved 2025 Budget
+    file: adopted-2025-budget.pdf
   - file: approved-2024-budget.pdf
     title: 2024 Approved Budget
   - title: 2022-budget-adopted.pdf
@@ -48,4 +50,3 @@ body: >-
 
 
   ![District Map](/assets/images/district_map.png "District Map"){.large_img}
-
