@@ -28,6 +28,8 @@ personnel:
   - roles:
       - Wildland Firefighter
       - Apparatus Operator
+      - Support
+      - Marine Crew
     last_name: Newnham
     first_name: Billy
     staff_type: volunteer
@@ -61,6 +63,8 @@ personnel:
     staff_type: volunteer
   - roles:
       - FireFighter
+      - Apparatus Operator
+      - Marine Crew
     first_name: Robin
     last_name: Dyer
     staff_type: volunteer
