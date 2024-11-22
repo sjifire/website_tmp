@@ -291,12 +291,14 @@ personnel:
     staff_type: volunteer
     roles:
       - EMT
+      - Marine Crew
     img_file: hella_cascorbi.jpg
   - first_name: Sue Ann
     last_name: Stabley
     staff_type: volunteer
     roles:
       - Support
+      - EMT
     img_file: sue_ann_stabley.jpg
   - first_name: Kathleen
     last_name: Salinas
@@ -336,6 +338,7 @@ personnel:
     img_file: shaun_armstrong.jpg
     roles:
       - FireFighter
+      - EMT
   - first_name: Trevor
     last_name: Bolton
     staff_type: volunteer
