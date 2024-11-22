@@ -185,6 +185,8 @@ personnel:
     roles:
       - FireFighter
       - Apparatus Operator
+      - EMT
+      - Marine Crew
     img_file: alexa_rust.jpg
   - first_name: Eric
     last_name: Eisenhardt
@@ -215,6 +217,7 @@ personnel:
     roles:
       - Support
       - Wildland Firefighter
+      - Apparatus Operator
     img_file: charles_genther.jpg
   - first_name: Harry
     last_name: See
@@ -260,6 +263,7 @@ personnel:
     roles:
       - FireFighter
       - Apparatus Operator
+      - Marine Crew
     img_file: eric_rezabek.jpg
   - first_name: Leo
     last_name: De Bruyn
