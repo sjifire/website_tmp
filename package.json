@@ -22,7 +22,7 @@
     "js-yaml": "^4.1.0",
     "linkedom": "^0.18.4",
     "lodash": "^4.17.21",
-    "markdown-it-attrs": "^4.1.6",
+    "markdown-it-attrs": "^4.3.0",
     "markdown-it-video": "^0.6.3",
     "playwright": "^1.47.2",
     "terser": "^5.37.0",
