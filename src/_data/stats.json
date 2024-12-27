@@ -1,86 +1,86 @@
 {
-  "updated_at": "2024-12-26T09:01:53.902Z",
-  "date_range_all_from": "2023-12-27T10:49:13.000Z",
-  "date_range_all_to": "2024-12-23T20:13:01.000Z",
-  "date_range_from": "2024-11-24T00:00:00.000Z",
-  "date_range_to": "2024-12-23T23:59:59.999Z",
+  "updated_at": "2024-12-27T09:02:04.572Z",
+  "date_range_all_from": "2023-12-29T11:37:28.000Z",
+  "date_range_all_to": "2024-12-24T22:40:04.000Z",
+  "date_range_from": "2024-11-25T00:00:00.000Z",
+  "date_range_to": "2024-12-24T23:59:59.999Z",
   "parseWarnings": 5,
   "_comment": "auto generated; do not manually modify",
   "_time_dsc": "all times are in seconds",
   "unit_time_stats": {
     "first_unit_reaction": {
-      "sum": 33737,
-      "mean": 1205,
-      "q1": 48,
-      "median": 86,
-      "q3": 124,
+      "sum": 33811,
+      "mean": 1252,
+      "q1": 64,
+      "median": 95,
+      "q3": 135,
       "min": 10,
       "max": 31200
     },
     "travel": {
-      "sum": 14384,
-      "mean": 514,
-      "q1": 278,
-      "median": 385,
-      "q3": 621,
+      "sum": 18494,
+      "mean": 560,
+      "q1": 298,
+      "median": 506,
+      "q3": 768,
       "min": 125,
       "max": 1532
     },
     "to_scene": {
-      "sum": 49619,
-      "mean": 1772,
-      "q1": 425,
-      "median": 547,
-      "q3": 884,
-      "min": 198,
+      "sum": 57669,
+      "mean": 1748,
+      "q1": 457,
+      "median": 758,
+      "q3": 1141,
+      "min": 240,
       "max": 31434
     },
     "on_scene": {
-      "sum": 40238,
-      "mean": 1437,
-      "q1": 752,
-      "median": 1201,
-      "q3": 1533,
+      "sum": 62572,
+      "mean": 1896,
+      "q1": 894,
+      "median": 1220,
+      "q3": 2373,
       "min": 77,
       "max": 5322
     }
   },
   "personnel_stats": {
     "time_on_incidents": {
-      "sum": 129138,
-      "mean": 4612,
-      "q1": 1573,
-      "median": 2452,
-      "q3": 4274,
+      "sum": 130083,
+      "mean": 4818,
+      "q1": 1587,
+      "median": 3564,
+      "q3": 4501,
       "min": 825,
       "max": 33792
     },
     "num_per_incidents": {
-      "mean": 2.3,
-      "q1": 1,
+      "mean": 2.4,
+      "q1": 1.5,
       "median": 2,
       "q3": 3,
       "min": 0,
       "max": 6
     },
-    "num_unique_responders": 16
+    "num_unique_responders": 17
   },
   "region_stats": {
     "central": {
       "incident_types": {
-        "medical_rescue": 8,
-        "fire": 3,
+        "medical_rescue": 6,
+        "fire": 4,
         "downgraded": 7,
         "cancelled": 3,
         "other": 0
       },
-      "num_incidents": 21,
+      "num_incidents": 20,
       "unit_travel_time": {
-        "sum": 10879,
-        "mean": 495,
-        "q1": 242,
-        "median": 364,
-        "q3": 598,
+        "sum": 14989,
+        "mean": 555,
+        "q1": 290,
+        "median": 386,
+        "q3": 776,
         "min": 125,
         "max": 1532
       }
@@ -126,28 +126,28 @@
   },
   "incident_stats": {
     "types": {
-      "medical_rescue": 13,
-      "fire": 4,
+      "medical_rescue": 11,
+      "fire": 5,
       "downgraded": 8,
       "cancelled": 3,
       "other": 0
     },
     "num_incidents_last_365_days": 464,
-    "num_incidents": 28,
-    "num_daytime_incidents": 17,
-    "num_nighttime_incidents": 11,
+    "num_incidents": 27,
+    "num_daytime_incidents": 15,
+    "num_nighttime_incidents": 12,
     "incident_times": {
-      "sum": 81540,
-      "mean": 2912,
-      "q1": 901,
-      "median": 1591,
-      "q3": 2097,
+      "sum": 84441,
+      "mean": 3127,
+      "q1": 863,
+      "median": 1593,
+      "q3": 2234,
       "min": 275,
       "max": 33792
     },
     "num_overlapping_incidents": 6,
     "num_per_day": {
-      "sum": 28,
+      "sum": 27,
       "mean": 1,
       "q1": 0,
       "median": 1,
@@ -158,13 +158,13 @@
   },
   "apparatus_stats": {
     "num_per_incident": {
-      "mean": 1.6,
+      "mean": 2,
       "q1": 1,
       "median": 1,
       "q3": 2,
       "min": 1,
-      "max": 4
+      "max": 11
     },
-    "num_unique_used": 6
+    "num_unique_used": 14
   }
 }
