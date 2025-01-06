@@ -1,24 +1,24 @@
 {
-  "updated_at": "2025-01-05T09:01:57.260Z",
-  "date_range_all_from": "2024-01-06T16:43:12.000Z",
-  "date_range_all_to": "2025-01-04T18:25:28.000Z",
-  "date_range_from": "2024-12-06T00:00:00.000Z",
-  "date_range_to": "2025-01-04T23:59:59.999Z",
+  "updated_at": "2025-01-06T09:02:41.785Z",
+  "date_range_all_from": "2024-01-07T20:47:22.000Z",
+  "date_range_all_to": "2025-01-05T12:44:02.000Z",
+  "date_range_from": "2024-12-07T00:00:00.000Z",
+  "date_range_to": "2025-01-05T23:59:59.999Z",
   "parseWarnings": 4,
   "_comment": "auto generated; do not manually modify",
   "_time_dsc": "all times are in seconds",
   "unit_time_stats": {
     "first_unit_reaction": {
-      "sum": 3328,
-      "mean": 128,
+      "sum": 3308,
+      "mean": 127,
       "q1": 82,
-      "median": 124,
+      "median": 123,
       "q3": 156,
       "min": 7,
       "max": 336
     },
     "travel": {
-      "sum": 22167,
+      "sum": 22183,
       "mean": 616,
       "q1": 321,
       "median": 617,
@@ -27,7 +27,7 @@
       "max": 1478
     },
     "to_scene": {
-      "sum": 32447,
+      "sum": 32443,
       "mean": 901,
       "q1": 463,
       "median": 848,
@@ -36,8 +36,8 @@
       "max": 2079
     },
     "on_scene": {
-      "sum": 68527,
-      "mean": 1852,
+      "sum": 68596,
+      "mean": 1854,
       "q1": 725,
       "median": 1190,
       "q3": 2544,
@@ -47,9 +47,9 @@
   },
   "personnel_stats": {
     "time_on_incidents": {
-      "sum": 133204,
-      "mean": 4933,
-      "q1": 1559,
+      "sum": 134378,
+      "mean": 4977,
+      "q1": 1725,
       "median": 2543,
       "q3": 5023,
       "min": 825,
@@ -69,15 +69,15 @@
     "central": {
       "incident_types": {
         "medical_rescue": 7,
-        "fire": 4,
-        "downgraded": 8,
+        "fire": 3,
+        "downgraded": 9,
         "cancelled": 2,
         "other": 0
       },
       "num_incidents": 21,
       "unit_travel_time": {
-        "sum": 13781,
-        "mean": 510,
+        "sum": 13797,
+        "mean": 511,
         "q1": 302,
         "median": 427,
         "q3": 695,
@@ -127,8 +127,8 @@
   "incident_stats": {
     "types": {
       "medical_rescue": 11,
-      "fire": 6,
-      "downgraded": 8,
+      "fire": 5,
+      "downgraded": 9,
       "cancelled": 2,
       "other": 0
     },
@@ -137,9 +137,9 @@
     "num_daytime_incidents": 15,
     "num_nighttime_incidents": 12,
     "incident_times": {
-      "sum": 60423,
-      "mean": 2238,
-      "q1": 1098,
+      "sum": 60488,
+      "mean": 2240,
+      "q1": 1131,
       "median": 1593,
       "q3": 2524,
       "min": 275,
