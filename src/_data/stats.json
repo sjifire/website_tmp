@@ -1,6 +1,6 @@
 {
-  "updated_at": "2025-03-21T09:03:09.103Z",
-  "date_range_all_from": "2024-03-21T14:54:53.000Z",
+  "updated_at": "2025-03-22T09:02:10.912Z",
+  "date_range_all_from": "2024-03-22T15:49:50.000Z",
   "date_range_all_to": "2025-03-20T12:06:25.000Z",
   "date_range_from": "2025-02-19T00:00:00.000Z",
   "date_range_to": "2025-03-20T23:59:59.999Z",
@@ -113,7 +113,7 @@
       "cancelled": 0,
       "other": 0
     },
-    "num_incidents_last_365_days": 447,
+    "num_incidents_last_365_days": 445,
     "num_incidents": 16,
     "num_daytime_incidents": 13,
     "num_nighttime_incidents": 3,
