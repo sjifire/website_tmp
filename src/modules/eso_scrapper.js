@@ -73,10 +73,13 @@ const retrieveCSVReport = async function (
   await page.goto(ESO_LOGIN_URL);
 
   // Interact with login form
-  await page.fill('input[name="username"]', username);
-  await page.fill('input[name="password"]', password);
-  await page.fill('input[name="agency"]', agency);
-  await page.click('button[type="submit"].login-button');
+  await page.fill('#OrganizationCode', agency);
+  await page.click('button[type="button"].eso-button-primary');
+
+
+  await page.fill('input[name="username-input"]', username);
+  await page.fill('input[type="password"]', password);
+  await page.click('button[type="button"].eso-button-primary');
 
   // go to ad-hoc reporting engine and run report
   await page.click("text=Ad-Hoc");
