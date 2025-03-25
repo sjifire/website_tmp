@@ -72,11 +72,11 @@ const retrieveCSVReport = async function (
   const page = await context.newPage();
   await page.goto(ESO_LOGIN_URL);
 
-  // Interact with login form
-  await page.fill('#OrganizationCode', agency);
+  // Interact with login form - page 1
+  await page.fill("#OrganizationCode", agency);
   await page.click('button[type="button"].eso-button-primary');
 
-
+  // Interact with login form - page 2
   await page.fill('input[name="username-input"]', username);
   await page.fill('input[type="password"]', password);
   await page.click('button[type="button"].eso-button-primary');
