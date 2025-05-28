@@ -1,5 +1,5 @@
 {
-  "updated_at": "2025-05-27T09:03:10.700Z",
+  "updated_at": "2025-05-28T09:03:20.183Z",
   "date_range_all_from": "2024-05-28T11:33:41.000Z",
   "date_range_all_to": "2025-05-27T00:27:48.000Z",
   "date_range_from": "2025-04-28T00:00:00.000Z",
@@ -18,29 +18,29 @@
       "max": 1047
     },
     "travel": {
-      "sum": 18834,
-      "mean": 523,
+      "sum": 19519,
+      "mean": 528,
       "q1": 287,
-      "median": 383,
-      "q3": 821,
+      "median": 392,
+      "q3": 812,
       "min": 4,
       "max": 1191
     },
     "to_scene": {
-      "sum": 29709,
-      "mean": 825,
-      "q1": 488,
-      "median": 819,
+      "sum": 30492,
+      "mean": 824,
+      "q1": 493,
+      "median": 812,
       "q3": 1149,
       "min": 4,
       "max": 1585
     },
     "on_scene": {
-      "sum": 58794,
-      "mean": 1547,
-      "q1": 464,
-      "median": 1416,
-      "q3": 2586,
+      "sum": 60595,
+      "mean": 1554,
+      "q1": 466,
+      "median": 1474,
+      "q3": 2577,
       "min": 17,
       "max": 4563
     }
@@ -95,11 +95,11 @@
       },
       "num_incidents": 6,
       "unit_travel_time": {
-        "sum": 8290,
-        "mean": 638,
-        "q1": 392,
-        "median": 735,
-        "q3": 893,
+        "sum": 8975,
+        "mean": 641,
+        "q1": 404,
+        "median": 729,
+        "q3": 882,
         "min": 4,
         "max": 1161
       }
@@ -177,7 +177,7 @@
   },
   "apparatus_stats": {
     "num_per_incident": {
-      "mean": 2.4,
+      "mean": 2.5,
       "q1": 2,
       "median": 2,
       "q3": 3,
