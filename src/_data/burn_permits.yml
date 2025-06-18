@@ -1,8 +1,8 @@
 fire_status: Low
 burn_season_start: 2024-10-01
 burn_season_end: 2025-06-15
-burn_ban_status: Open
-commercial_burn_ban_status: Open
+burn_ban_status: Closed
+commercial_burn_ban_status: Closed
 rec_campfire_status: Open
 state_campfire_status: Open
 np_campfire_status: Open
