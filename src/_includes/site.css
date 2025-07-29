@@ -984,6 +984,7 @@ body {
 }
 
 .widget__body .level--high,
+.widget__body .level--very-high,
 .widget__body .level--restricted,
 .widget__body .level--closed {
   background-color: #ffe0e0;
