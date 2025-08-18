@@ -1,9 +1,9 @@
-fire_status: Very High
+fire_status: High
 burn_season_start: 2025-10-01
 burn_season_end: 2025-06-15
 burn_ban_status: Closed
 commercial_burn_ban_status: Closed
-rec_campfire_status: Closed
+rec_campfire_status: Open
 state_campfire_status: Closed
 np_campfire_status: Closed
 body: >-
