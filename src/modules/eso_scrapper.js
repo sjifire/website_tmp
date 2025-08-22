@@ -63,6 +63,7 @@ const retrieveCSVReport = async function (
   const os = require("os");
   const path = require("path");
   const userDataDir = fs.mkdtempSync(path.join(os.tmpdir(), "chromium"));
+  const runTime = (new Date()).getTime();
 
   const { chromium } = require("playwright");
   const context = await chromium.launchPersistentContext(userDataDir, {
@@ -83,13 +84,13 @@ const retrieveCSVReport = async function (
   await page.click('button[type="button"].eso-button-primary');
   await page.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
   
-  page.screenshot({ path: "./eso_init_page.png", fullPage: true });
+  page.screenshot({ path: `./eso_init_page.${runTime}.png`, fullPage: true });
 
   // go to ad-hoc reporting engine and run report
   await page.click("text=Ad-Hoc");
   const [reportPage] = await Promise.all([
     context.waitForEvent("page"),
-    page.screenshot({ path: "./eso_report.png", fullPage: true }),
+    page.screenshot({ path: `./eso_report.${runTime}.png`, fullPage: true }),
     page.click("text=" + reportName), // ad-hoc opens a new tab; we need to go find it
   ]);
 
