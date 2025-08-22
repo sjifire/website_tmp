@@ -82,11 +82,11 @@ const retrieveCSVReport = async function (
   await page.click('button[type="button"].eso-button-primary');
 
   // go to ad-hoc reporting engine and run report
-  page.screenshot({ path: "eso_init_page.png", fullPage: true });
+  page.screenshot({ path: "./eso_init_page.png", fullPage: true });
   await page.click("text=Ad-Hoc");
   const [reportPage] = await Promise.all([
     context.waitForEvent("page"),
-    page.screenshot({ path: "eso_report.png", fullPage: true }),
+    page.screenshot({ path: "./eso_report.png", fullPage: true }),
     page.click("text=" + reportName), // ad-hoc opens a new tab; we need to go find it
   ]);
 
