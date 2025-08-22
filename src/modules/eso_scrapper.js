@@ -75,17 +75,13 @@ const retrieveCSVReport = async function (
   // Interact with login form - page 1
   await page.fill("#OrganizationCode", agency);
   await page.click('button[type="button"].eso-button-primary');
-
   // Interact with login form - page 2
-  const [loginPage] = await Promise.all([
-    context.waitForEvent("page"),
-    page.fill('input[name="username-input"]', username),
-    page.fill('input[type="password"]', password),
-    page.click('button[type="button"].eso-button-primary'),
-    context.waitForEvent("page"),
-    page.screenshot({ path: "./eso_init_page.png", fullPage: true })
-  ]);
-  await loginPage.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
+  await reportPage.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
+  await page.fill('input[name="username-input"]', username);
+  await page.fill('input[type="password"]', password);
+  await page.click('button[type="button"].eso-button-primary');
+  await reportPage.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
+  page.screenshot({ path: "./eso_init_page.png", fullPage: true });
 
   // go to ad-hoc reporting engine and run report
   await page.click("text=Ad-Hoc");
