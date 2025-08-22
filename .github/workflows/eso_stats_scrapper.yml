@@ -34,6 +34,13 @@ jobs:
           ESO_REPORT_USERNAME: ${{ secrets.ESO_REPORT_USERNAME }}
           ESO_REPORT_PASSWORD: ${{ secrets.ESO_REPORT_PASSWORD }}
           ESO_REPORT_AGENCY: ${{ secrets.ESO_REPORT_AGENCY }}
+      - name: "Upload eso imgs"
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eso_img_artifacts
+          path: ./eso*.png
+          retention-days: 7
       - name: "Upload Artifact"
         uses: actions/upload-artifact@v4
         with:
@@ -41,7 +48,6 @@ jobs:
           path: |
             ./src/_data/stats.json
             ./report.csv
-            ./eso*.png
           retention-days: 7
       - name: Add & Commit updated stats.json
         uses: EndBug/add-and-commit@v9
