@@ -83,7 +83,7 @@ const retrieveCSVReport = async function (
   await page.fill('input[name="username-input"]', username);
   await page.fill('input[type="password"]', password);
   page.screenshot({ path: `./eso_login2_page.${runTime}.png`, fullPage: true });
-  await page.click('button[type="button"].eso-button-primary');
+  await page.click('#login-button');
   await page.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
   page.screenshot({ path: `./eso_login3_page.${runTime}.png`, fullPage: true });
   
