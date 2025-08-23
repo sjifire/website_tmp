@@ -98,7 +98,8 @@ const retrieveCSVReport = async function (
   //logger.info('login form 2-a+++');
 
   // go to ad-hoc reporting engine and run report
-  await page.click("text=Ad-Hoc");
+  //await page.click("text=Ad-Hoc");
+  await page.locator("text=Ad-Hoc").filter({ visible: true }).click();
   const [reportPage] = await Promise.all([
     context.waitForEvent("page"),
     page.screenshot({ path: `./eso_report.${runTime}.png`, fullPage: true }),
