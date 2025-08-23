@@ -77,25 +77,25 @@ const retrieveCSVReport = async function (
   page.on('console', msg => { logger.info(`${msg.type()}: ${msg.text()}`) });
   
   // Interact with login form - page 1
-  logger.info('login form 1');
+  //logger.info('login form 1');
   await page.fill("#OrganizationCode", agency);
   await page.click('button[type="button"].eso-button-primary');
   page.screenshot({ path: `./eso_login1_page.${runTime}.png`, fullPage: true });
   
   // Interact with login form - page 2
-  logger.info('login form 2');
+//  logger.info('login form 2');
   await page.fill('input[name="username-input"]', username);
   await page.fill('input[type="password"]', password);
   page.screenshot({ path: `./eso_login2_page.${runTime}.png`, fullPage: true });
-  logger.info('login form 2+');
+  //logger.info('login form 2+');
   await page.click('#login-button');
-  logger.info('login form 2++');
+  //logger.info('login form 2++');
   await page.waitForLoadState("networkidle", { timeout: ESO_TIMEOUT });
-  logger.info('login form 2+++');
+  //logger.info('login form 2+++');
   page.screenshot({ path: `./eso_login3_page.${runTime}.png`, fullPage: true });
 
-  await page.click('#login-button');
-  logger.info('login form 2-a+++');
+  //await page.click('#login-button');
+  //logger.info('login form 2-a+++');
 
   // go to ad-hoc reporting engine and run report
   await page.click("text=Ad-Hoc");
