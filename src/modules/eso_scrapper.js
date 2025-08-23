@@ -73,6 +73,9 @@ const retrieveCSVReport = async function (
   const page = await context.newPage();
   await page.goto(ESO_LOGIN_URL);
 
+  // Listen for all console logs
+  page.on('console', msg => { logger.info(msg) });
+  
   // Interact with login form - page 1
   await page.fill("#OrganizationCode", agency);
   await page.click('button[type="button"].eso-button-primary');
