@@ -266,21 +266,6 @@ collections:
                 required: false
                 media_folder: "/src/assets/personnel_imgs/"
                 public_folder: ""
-      - label: "About/Employment"
-        name: "employment"
-        delete: false
-        editor:
-          preview: false
-        file: "src/_data/employment.yml"
-        fields:
-          - name: "header_display"
-            label: "Display on Page Header"
-            widget: "select"
-            options: ["Show", "Hide"]
-          - label: Body
-            name: body
-            widget: markdown
-            required: true
       - label: "About/Incidents"
         name: "incidents"
         delete: false
