@@ -11,6 +11,7 @@
       <a tabindex="0">About</a>
       <ul class="submenu">
         <li class="subitem"><a href="/about/who-we-are/">Who We Are</a></li>
+        <li class="subitem"><a href="/about/employment/">Employment</a></li>
         <li class="subitem"><a href="/about/emergency-personnel/">Emergency Personnel</a></li>
         <li class="subitem"><a href="/about/key-information/">Key Information</a></li>
         <li class="subitem"><a href="/about/incidents/">Incidents</a></li>
@@ -40,6 +41,11 @@
         <li class="subitem"><a href="/services/knoxbox/">KnoxBox</a></li>
         <li class="subitem"><a href="/services/fire-alarms/">Smoke and CO Alarms</a></li>
       </ul>
+    {% if employment.header_display == 'Show' %}
+    <li class="item item--highlight">
+      <a href="/about/employment/">Employment</a>
+    </li>
+    {% endif %}
     <li class="item{{ ' active' if page.url.includes('/contact/') }}">
       <a href="/contact">Contact</a>
     </li>
