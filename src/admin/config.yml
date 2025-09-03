@@ -167,6 +167,23 @@ collections:
             name: body
             widget: markdown
             required: true
+      - label: "About/Employment"
+        name: "employment"
+        delete: false
+        editor:
+          preview: false
+        file: "src/_data/employment.yml"
+        fields:
+          - label: Header Display
+            name: header_display
+            widget: "select"
+            options: ["staff", "volunteer"]
+            required: true
+            multiple: false
+          - label: Body
+            name: body
+            widget: markdown
+            required: true
       - label: "About/Who We Are"
         name: "who_we_are"
         delete: false
