@@ -177,7 +177,7 @@ collections:
           - label: Header Display
             name: header_display
             widget: "select"
-            options: ["staff", "volunteer"]
+            options: ["Show", "Hide"]
             required: true
             multiple: false
           - label: Body
