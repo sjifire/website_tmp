@@ -26,14 +26,6 @@ personnel:
     last_name: Roberson
     staff_type: volunteer
   - roles:
-      - Wildland Firefighter
-      - Apparatus Operator
-      - Support
-      - Marine Crew
-    last_name: Newnham
-    first_name: Billy
-    staff_type: volunteer
-  - roles:
       - FireFighter
       - Apparatus Operator
     first_name: Izaac
@@ -169,16 +161,6 @@ personnel:
       - EMT
       - Apparatus Operator
     img_file: katie_english.jpg
-  - first_name: Tom
-    last_name: Eades
-    staff_type: staff
-    roles:
-      - FireFighter
-      - EMT
-      - Apparatus Operator
-      - Marine Crew
-    img_file: tom_eades.jpg
-    rank: Lieutenant
   - first_name: Alexa
     last_name: Rust
     staff_type: volunteer
