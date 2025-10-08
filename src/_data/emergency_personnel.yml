@@ -76,11 +76,6 @@ personnel:
     first_name: Claire
     last_name: Crawbuck
     staff_type: volunteer
-  - roles:
-      - FireFighter
-    first_name: Max
-    last_name: Bush
-    staff_type: volunteer
   - first_name: Noel
     last_name: Monin
     title: ""
@@ -314,13 +309,6 @@ personnel:
       - FireFighter
       - Apparatus Operator
     img_file: adam_greene.jpg
-  - first_name: Shaun
-    last_name: Armstrong
-    staff_type: volunteer
-    img_file: shaun_armstrong.jpg
-    roles:
-      - FireFighter
-      - EMT
   - first_name: Trevor
     last_name: Bolton
     staff_type: volunteer
