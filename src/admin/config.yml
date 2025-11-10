@@ -167,12 +167,12 @@ collections:
             name: body
             widget: markdown
             required: true
-      - label: "About/Employment"
-        name: "employment"
+      - label: "About/Join Us"
+        name: "join"
         delete: false
         editor:
           preview: false
-        file: "src/_data/employment.yml"
+        file: "src/_data/join.yml"
         fields:
           - label: Header Display
             name: header_display
