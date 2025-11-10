@@ -266,12 +266,12 @@ collections:
                 required: false
                 media_folder: "/src/assets/personnel_imgs/"
                 public_folder: ""
-      - label: "About/Employment"
-        name: "employment"
+      - label: "About/Join Us"
+        name: "join"
         delete: false
         editor:
           preview: false
-        file: "src/_data/employment.yml"
+        file: "src/_data/join.yml"
         fields:
           - name: "header_display"
             label: "Display on Page Header"
